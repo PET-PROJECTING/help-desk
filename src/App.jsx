@@ -1,4 +1,4 @@
-import {BrowserRouter, Routes, Route} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import {
   NoPage,
   Home,
@@ -6,20 +6,23 @@ import {
   Products,
   Customers,
 } from "./pages";
+import { PATHS } from './constants';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path={PATHS.ROOT} element={<Layout />}>
           <Route index element={<Home />}/>
-          <Route path="customers" element={<Customers />}/>
-          <Route path="products" element={<Products />}/>
-          <Route path="*" element={<NoPage />}/>
+          <Route path={PATHS.CUSTOMERS} element={<Customers />}/>
+          <Route path={PATHS.CUSTOMERS} element={<Products />}/>
+          <Route path={PATHS.OTHERS} element={<NoPage />}/>
         </Route>
       </Routes>
     </BrowserRouter>
   );
 }
+
+App.displayName = 'App';
 
 export default App;

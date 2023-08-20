@@ -1,9 +1,12 @@
-import { HeaderContainer } from "../../containers";
-import Navbar from './__sub-components/navbar/Navbar';
-import Logo from './__sub-components/logo/Logo';
-import ToolBox from './__sub-components/toolbox/ToolBox';
+import { HeaderContainer } from '../../containers';
+import {
+  Navbar,
+  Logo,
+  ToolBox,
+} from './components';
+
 const Header = () => {
-  return(
+  return (
     <HeaderContainer>
       <Logo />
       <Navbar />
@@ -11,5 +14,7 @@ const Header = () => {
     </HeaderContainer>
   );
 };
+
+Header.displayName = 'Header';
 
 export default Header;

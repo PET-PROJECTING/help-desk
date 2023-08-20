@@ -1,7 +1,8 @@
 import styles from './styles.module.scss';
 import PropTypes from 'prop-types';
+
 const HeaderContainer = ({ children }) => {
-  return(
+  return (
     <div className={styles.headerContainer}>{children}</div>
   );
 }

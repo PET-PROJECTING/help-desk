@@ -1,15 +1,13 @@
 import { NavLink } from 'react-router-dom';
 import classNames from 'classnames';
 import styles from './styles.module.scss';
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
 const Link = ({ to, children }) => {
   return (
     <NavLink
       to={to}
-      className={({ isActive }) => {
-        return classNames(styles.link, { [styles.active]: isActive } )
-      }}
+      className={({ isActive }) => classNames(styles.link, { [styles.active]: isActive } )}
     >
       {children}
     </NavLink>

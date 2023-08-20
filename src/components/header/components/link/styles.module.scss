@@ -1,0 +1,14 @@
+@import '../../../../utilities/variables';
+@import '../../../../utilities/opacities';
+
+.link {
+  @include default-opacity;
+  padding: 0 30px;
+  text-decoration: none;
+  color: $white;
+}
+
+.active {
+  @include active-opacity;
+  border-bottom: 4px solid $white;
+}
