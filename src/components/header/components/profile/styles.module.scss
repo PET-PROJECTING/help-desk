@@ -1,0 +1,25 @@
+@import '../../../../utilities/variables';
+
+.profileContainer {
+  display: flex;
+  margin: 0 10px;
+  align-content: center;
+}
+
+.imageContainer {
+  margin: 0 10px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+}
+
+.profileImage {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+}
+
+.userFullName {
+  display: flex;
+  align-items: center;
+  color: $white;
+}

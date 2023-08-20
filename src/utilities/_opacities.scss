@@ -1,0 +1,9 @@
+@mixin default-opacity {
+  opacity: 0.7;
+}
+
+@mixin active-opacity {
+  opacity: 1;
+}
+
+//@import "utilities/opacities" to use these mixins inside other scss files

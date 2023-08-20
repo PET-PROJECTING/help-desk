@@ -1,0 +1,13 @@
+@import '../../utilities/variables';
+@import '../../utilities/mixins';
+
+.headerContainer {
+  @include default-box-shadow;
+
+  display: flex;
+  justify-content: space-between;
+  height: 2.8rem;
+  padding: 10px 30px;
+  background-color: $bright-blue;
+  font-size: 0.875rem;
+}
